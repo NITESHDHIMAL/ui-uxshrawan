@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body>
+
+    <!-- http verbs/request => crud(cread, read, update, delete)
+    post, get, put, patch, delete -->
+
+
+    <!-- <form action="" method="post"> -->
+    <!-- <form action="/contact">  -->
+    <form action="#"> 
+        <label for="name">Name *</label>
+        <input type="text" id="name" placeholder="Name" name="name"> <br>
+        
+        <label for="">Email *</label> 
+        <input type="email" placeholder="Email" name="email"><br>
+        
+        <label for="">Subject *</label>  
+        <input type="text" placeholder="Subject" name="subject"><br>
+        <br> 
+
+
+        <p>I want to join Mindrisers Internship program after my training is over *</p>
+
+        <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="confirm">
+        <label for="no">No</label>
+        <input type="radio" id="no" name="confirm">
+
+
+        <!-- ctrl + d  -->
+         <!-- ctrl + shift + l  -->
+
+        <fieldset>
+            <legend>choose course:</legend>
+
+            <label for="python">python</label>
+            <input type="checkbox" name="course" value="python" id="python"> <br>
+
+            <label for="ui/ux">ui/ux</label>
+            <input type="checkbox" name="course" value="ui/ux" id="ui/ux"> <br>
+
+            <label for="webdesign">webdesign</label>
+            <input type="checkbox" name="course" value="webdesign" id="webdesign"> <br>
+
+            <label for="graphicdesign">graphicdesign</label>
+            <input type="checkbox" name="course" value="graphicdesign" id="graphicdesign"> <br>
+        </fieldset>
+
+        <label for="">Academic</label>
+        <select name="" id="">
+            <option value="see">see</option>
+            <option value="+2">+2</option>
+            <option value="bachelor">bachelor</option>
+            <option value="master">master</option>
+        </select><br>
+
+        <label for="">Any queries?</label>
+        <textarea name="" id="" rows="25"></textarea>
+        <br>
+        <!-- <input type="submit" value="Save"><br> -->
+        <button>Save</button>
+    </form>
+
+    <script>
+        const contact = {
+            name: 'ram',
+            email: 'asasdfasdf@gmail.com',
+            pohone: 9856324587,
+            subject: 'about ui/ux course'
+        } 
+    </script>
+
+
+</body>
+
+</html>
