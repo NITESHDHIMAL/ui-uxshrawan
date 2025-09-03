@@ -10,37 +10,98 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            .container{
-                display: flex;
-            }
-            .left{
-                background-color: green;
-                height: 100vh;
-                overflow: auto;
-                position: sticky;
-                top: 0;
-                width: 20%;
-            }
-            .center{
-                background-color: gray;
-                width: 60%;
-            }
-            .right{
-                background-color: lightblue;
-                 height: 100vh;
-                overflow: auto;
-                position: sticky;
-                top: 0;
-                width: 20%;
-            }
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
-        </style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0A0A0A;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .left {
+            /* background-color: green; */
+            height: 100vh;
+            overflow: auto;
+            position: sticky;
+            top: 0;
+            width: 20%;
+        }
+
+        .center {
+            /* background-color: gray; */
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .right {
+            /* background-color: lightblue; */
+            height: 100vh;
+            overflow: auto;
+            position: sticky;
+            top: 0;
+            width: 20%;
+        }
+
+        /* center content  starts*/
+        .post {
+            background-color: #242526;
+            width: 55%;
+            padding: 1rem;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img[alt='post_image'] {
+            width: 100%;
+            height: 60%;
+            border-radius: 10px;
+        }
+
+        .tag {
+            margin: 1rem 0;
+        }
+
+        /* center content ends  */
+        img[alt='profile'] {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .profile_description {
+            display: flex;
+            column-gap: 1rem;
+        }
+
+        .social_share {
+            display: flex;
+            justify-content: space-between;
+            margin: 1.5rem 0;
+        }
+        .social_count{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+    </style>
 
 
 </head>
@@ -79,60 +140,222 @@
         <div class="container">
             <!-- left navigation  -->
             <div class="left">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum
+                est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum
+                est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum
+                est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum
+                est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum
+                est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates velit, soluta dicta assumenda rerum
+                est cupiditate fuga cum non. Et quasi quibusdam sed nihil non at assumenda velit magnam omnis.
             </div>
 
             <div class="center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facilis sint qui in reprehenderit! Numquam consequuntur aliquam magnam quod, accusamus alias maiores, vel mollitia, eum ipsa ullam commodi optio sint?
+
+                <div class="post">
+                    <div class="profile">
+                        <div class="profile_description">
+                            <img src="https://niteshdhimal.github.io/Facebook-clone/images/story1.jpg" alt="profile">
+                            <div>
+                                <p>Stess Free Quiotes</p>
+                                <span>Behroz Shah. 2h</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <p>Life is in Village😍 ♥️</p>
+                    <p class="tag">#VillageLife #Incredibleindia #BeautyofIndia #Village</p>
+                    <img src="https://niteshdhimal.github.io/Facebook-clone/images/post1.jpg" alt="post_image">
+
+                    <div class="social_share">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>9.5k</span>
+                        </div>
+                        <div>
+                            <span>76 Comments</span>
+                            <span>543 Shares</span>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="social_count">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Comment</span>
+                        </div> 
+                        <div>
+                            <i class="fa-solid fa-share"></i>
+                            <span>Comment</span>
+                        </div> 
+                    </div> 
+                </div>
+
+                <div class="post">
+                    <div class="profile">
+                        <div class="profile_description">
+                            <img src="https://niteshdhimal.github.io/Facebook-clone/images/story1.jpg" alt="profile">
+                            <div>
+                                <p>Stess Free Quiotes</p>
+                                <span>Behroz Shah. 2h</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <p>Life is in Village😍 ♥️</p>
+                    <p class="tag">#VillageLife #Incredibleindia #BeautyofIndia #Village</p>
+                    <img src="https://niteshdhimal.github.io/Facebook-clone/images/post1.jpg" alt="post_image">
+
+                    <div class="social_share">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>9.5k</span>
+                        </div>
+                        <div>
+                            <span>76 Comments</span>
+                            <span>543 Shares</span>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="social_count">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Comment</span>
+                        </div> 
+                        <div>
+                            <i class="fa-solid fa-share"></i>
+                            <span>Comment</span>
+                        </div> 
+                    </div>
+
+
+                </div>
+
+                <div class="post">
+                    <div class="profile">
+                        <div class="profile_description">
+                            <img src="https://niteshdhimal.github.io/Facebook-clone/images/story1.jpg" alt="profile">
+                            <div>
+                                <p>Stess Free Quiotes</p>
+                                <span>Behroz Shah. 2h</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <p>Life is in Village😍 ♥️</p>
+                    <p class="tag">#VillageLife #Incredibleindia #BeautyofIndia #Village</p>
+                    <img src="https://niteshdhimal.github.io/Facebook-clone/images/post1.jpg" alt="post_image">
+
+                    <div class="social_share">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>9.5k</span>
+                        </div>
+                        <div>
+                            <span>76 Comments</span>
+                            <span>543 Shares</span>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="social_count">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Comment</span>
+                        </div> 
+                        <div>
+                            <i class="fa-solid fa-share"></i>
+                            <span>Comment</span>
+                        </div> 
+                    </div>
+
+
+                </div>
+
+                <div class="post">
+                    <div class="profile">
+                        <div class="profile_description">
+                            <img src="https://niteshdhimal.github.io/Facebook-clone/images/story1.jpg" alt="profile">
+                            <div>
+                                <p>Stess Free Quiotes</p>
+                                <span>Behroz Shah. 2h</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <p>Life is in Village😍 ♥️</p>
+                    <p class="tag">#VillageLife #Incredibleindia #BeautyofIndia #Village</p>
+                    <img src="https://niteshdhimal.github.io/Facebook-clone/images/post1.jpg" alt="post_image">
+
+                    <div class="social_share">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>9.5k</span>
+                        </div>
+                        <div>
+                            <span>76 Comments</span>
+                            <span>543 Shares</span>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="social_count">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-comment"></i>
+                            <span>Comment</span>
+                        </div> 
+                        <div>
+                            <i class="fa-solid fa-share"></i>
+                            <span>Comment</span>
+                        </div> 
+                    </div>
+
+
+                </div>
+
+
             </div>
-            
+
             <div class="right">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam
+                voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam
+                voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam
+                voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam
+                voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam
+                voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam
+                voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel magni neque nesciunt incidunt quibusdam
+                voluptatem illo alias nemo earum at. Voluptas alias ut illo obcaecati nulla? Ea quasi eos tempore!
             </div>
         </div>
 
